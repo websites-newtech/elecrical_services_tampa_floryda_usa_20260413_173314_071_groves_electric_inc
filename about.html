@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet Chris Groves — Licensed Master Electrician and owner of Groves Electric, Inc. Serving Tampa, FL since 1998. A+ BBB, Angie's List Super Service Award 8 years running.">
+  <meta property="og:title" content="About | Groves Electric, Inc.">
+  <meta property="og:type" content="website">
+  <title>About | Groves Electric, Inc. | Tampa Master Electrician</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+</head>
+<body x-data="{ mobileOpen: false }">
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Groves Electric, Inc. - Home">
+        <span class="logo-icon" aria-hidden="true"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="#4E9271"/><path d="M20 6L10 20H18L16 30L26 16H18L20 6Z" fill="#ffffff" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/></svg></span>
+        <span class="logo-text"><span class="logo-name">Groves Electric</span><span class="logo-tagline">Licensed Master Electrician</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="about.html" class="nav-link" aria-current="page">About</a></li>
+        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="tel:18137893400" class="btn btn-primary nav-cta">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        813-789-3400
+      </a>
+      <button class="nav-hamburger" aria-label="Toggle mobile menu" :aria-expanded="mobileOpen.toString()" @click="mobileOpen = !mobileOpen">
+        <span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span>
+      </button>
+    </div>
+    <div class="mobile-menu" :class="{ 'mobile-menu--open': mobileOpen }">
+      <ul role="list">
+        <li><a href="index.html" class="mobile-link" @click="mobileOpen = false">Home</a></li>
+        <li><a href="services.html" class="mobile-link" @click="mobileOpen = false">Services</a></li>
+        <li><a href="about.html" class="mobile-link" @click="mobileOpen = false">About</a></li>
+        <li><a href="testimonials.html" class="mobile-link" @click="mobileOpen = false">Testimonials</a></li>
+        <li><a href="contact.html" class="mobile-link" @click="mobileOpen = false">Contact</a></li>
+        <li><a href="tel:18137893400" class="btn btn-primary mobile-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>Call 813-789-3400</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="page-hero" aria-label="About page header">
+      <div class="container">
+        <span class="page-hero-label" data-animate-hero>Family-Owned Since 1998</span>
+        <h1 class="page-hero-title" data-animate-hero>About Groves Electric</h1>
+        <p class="page-hero-sub" data-animate-hero>A Tampa institution built on quality, fair pricing, and genuine care for our customers and their homes.</p>
+      </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section class="section" aria-labelledby="bio-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image" data-animate>
+            <img src="assets/images/image_002.jpg" alt="Chris Groves, Owner of Groves Electric, Inc., Licensed Master Electrician in Tampa" class="img-rounded img-full">
+            <div class="about-badge-stack">
+              <div class="about-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span>A+ BBB Rating</span>
+              </div>
+              <div class="about-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span>Angie's List 8× Winner</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-content">
+            <span class="section-label" data-animate>Meet the Owner</span>
+            <h2 id="bio-heading" class="section-heading" data-animate>Chris Groves<br><em>Master Electrician</em></h2>
+            <p class="body-text" data-animate>
+              "Hello, I am Chris Groves — Owner of Groves Electric, Inc. I am a licensed, bonded and insured Master Electrician and the owner of a thriving electrical contracting business in South Tampa.
+            </p>
+            <p class="body-text" data-animate>
+              After obtaining a degree in Electrical Engineering and putting in many years of hard work, I started my own electrical contracting company in Minneapolis in 1998. Six years later I relocated Groves Electric to South Tampa. Since then I have grown the business with two additional crews of talented and experienced electricians who share my commitment to customer satisfaction and quality workmanship.
+            </p>
+            <p class="body-text" data-animate>
+              There are a number of things that set us apart from our competitors. We give free quotes. We never charge a trip charge or any other hidden fees. We guarantee our customer's satisfaction with every job. We warranty our parts and labor for a full year. Our electricians are highly skilled with an average of 15 years of experience.
+            </p>
+            <p class="body-text" data-animate>
+              The most important difference is our philosophy — We pride ourselves in doing quality work at a fair price and always being considerate of our customer's home and their time. We show up when we say we will and we clean up after ourselves.
+            </p>
+            <p class="body-text" data-animate>
+              As the owner and director of operations, I am personally involved in each project my company does. When you call Groves Electric, you are calling me directly on my cell phone! I ensure that the work performed is not just to code, but that every possible safety consideration is put in place. I look forward to earning your business."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards & Credentials -->
+    <section class="section awards-section" aria-labelledby="awards-heading">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">Awards &amp; Credentials</span>
+          <h2 id="awards-heading" class="section-heading">Recognized for Excellence</h2>
+        </div>
+        <div class="awards-grid">
+          <div class="award-card" data-animate style="animation-delay:0ms">
+            <div class="award-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h3>Angie's List Super Service Award</h3>
+            <p>Awarded for 8 consecutive years — recognizing outstanding customer service and quality work.</p>
+          </div>
+          <div class="award-card" data-animate style="animation-delay:80ms">
+            <div class="award-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>A+ BBB Rating</h3>
+            <p>Better Business Bureau A+ accredited — reflecting our commitment to ethical business practices.</p>
+          </div>
+          <div class="award-card" data-animate style="animation-delay:160ms">
+            <div class="award-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <h3>Licensed Master Electrician</h3>
+            <p>State-licensed, bonded, and fully insured. Electrical Engineering degree + 25+ years of hands-on experience.</p>
+          </div>
+          <div class="award-card" data-animate style="animation-delay:240ms">
+            <div class="award-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Experienced Team</h3>
+            <p>Three crews of talented electricians with an average of 15 years of field experience each.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section values-section" aria-labelledby="values-heading">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">Our Foundation</span>
+          <h2 id="values-heading" class="section-heading">Three Principles We Live By</h2>
+        </div>
+        <div class="values-grid">
+          <div class="value-item" data-animate>
+            <span class="value-number" aria-hidden="true">01</span>
+            <h3>Quality</h3>
+            <p>Every installation is performed not just to code, but with every possible safety consideration in place. We never cut corners.</p>
+          </div>
+          <div class="value-item" data-animate style="animation-delay:80ms">
+            <span class="value-number" aria-hidden="true">02</span>
+            <h3>Pricing</h3>
+            <p>Free estimates. No trip charges. No hidden fees. Fair, transparent pricing that respects your budget and your trust.</p>
+          </div>
+          <div class="value-item" data-animate style="animation-delay:160ms">
+            <span class="value-number" aria-hidden="true">03</span>
+            <h3>Service</h3>
+            <p>We show up on time, communicate clearly, and clean up after ourselves. Guaranteed satisfaction on every single job.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner" aria-labelledby="cta-about-heading">
+      <div class="container">
+        <div class="cta-banner-inner" data-animate>
+          <h2 id="cta-about-heading">Ready to Work With Tampa's Best?</h2>
+          <p>Call Chris directly for a free quote. No trip charge. No hidden fees.</p>
+          <div class="cta-banner-actions">
+            <a href="tel:18137893400" class="btn btn-primary btn-lg">Call 813-789-3400</a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg">Send a Message</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo footer-logo" aria-label="Groves Electric, Inc. - Home">
+            <span class="logo-icon" aria-hidden="true"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="#4E9271"/><path d="M20 6L10 20H18L16 30L26 16H18L20 6Z" fill="#ffffff" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/></svg></span>
+            <span class="logo-text"><span class="logo-name">Groves Electric</span><span class="logo-tagline">Licensed Master Electrician</span></span>
+          </a>
+          <p class="footer-desc">Family-owned electrical contractor serving Tampa and surrounding areas for over 20 years. Licensed, bonded, and insured.</p>
+        </div>
+        <div class="footer-nav">
+          <h3 class="footer-heading">Navigation</h3>
+          <ul role="list"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div class="footer-services">
+          <h3 class="footer-heading">Popular Services</h3>
+          <ul role="list"><li><a href="services.html#ev-chargers">EV Chargers</a></li><li><a href="services.html#panel-updates">Panel Upgrades</a></li><li><a href="services.html#surge-protection">Surge Protection</a></li><li><a href="services.html#lighting">Lighting</a></li><li><a href="services.html#video-doorbells">Video Doorbells</a></li></ul>
+        </div>
+        <div class="footer-contact">
+          <h3 class="footer-heading">Contact</h3>
+          <address>
+            <a href="tel:18137893400" class="footer-contact-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>813-789-3400</a>
+            <a href="mailto:cgroves@groveselectricinc.com" class="footer-contact-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>cgroves@groveselectricinc.com</a>
+            <span class="footer-contact-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Tampa, FL 33606</span>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Groves Electric, Inc. All rights reserved.</p>
+        <p class="footer-awards"><span>Angie's List Super Service Award — 8 Consecutive Years</span><span aria-hidden="true">·</span><span>A+ BBB Rating</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

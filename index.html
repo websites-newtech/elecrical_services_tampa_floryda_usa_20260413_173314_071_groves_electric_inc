@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Groves Electric, Inc. — Tampa's trusted family-owned electrician. Licensed Master Electrician serving South Tampa for 20+ years. Free quotes, no trip charges. Call 813-789-3400.">
+  <meta property="og:title" content="Groves Electric, Inc. | Tampa Electrician">
+  <meta property="og:description" content="Family-owned electrical contractor serving South Tampa for over 20 years. Free quotes, no hidden fees. Call 813-789-3400.">
+  <meta property="og:type" content="website">
+  <title>Groves Electric, Inc. | Tampa Electrician & Electrical Contractor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+</head>
+<body x-data="{ mobileOpen: false }">
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Groves Electric, Inc. - Home">
+        <span class="logo-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="8" fill="#4E9271"/>
+            <path d="M20 6L10 20H18L16 30L26 16H18L20 6Z" fill="#ffffff" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-name">Groves Electric</span>
+          <span class="logo-tagline">Licensed Master Electrician</span>
+        </span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="tel:18137893400" class="btn btn-primary nav-cta">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+        </svg>
+        813-789-3400
+      </a>
+
+      <button
+        class="nav-hamburger"
+        aria-label="Toggle mobile menu"
+        aria-expanded="false"
+        :aria-expanded="mobileOpen.toString()"
+        @click="mobileOpen = !mobileOpen">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" :class="{ 'mobile-menu--open': mobileOpen }" role="dialog" aria-label="Mobile navigation">
+      <ul role="list">
+        <li><a href="index.html" class="mobile-link" @click="mobileOpen = false">Home</a></li>
+        <li><a href="services.html" class="mobile-link" @click="mobileOpen = false">Services</a></li>
+        <li><a href="about.html" class="mobile-link" @click="mobileOpen = false">About</a></li>
+        <li><a href="testimonials.html" class="mobile-link" @click="mobileOpen = false">Testimonials</a></li>
+        <li><a href="contact.html" class="mobile-link" @click="mobileOpen = false">Contact</a></li>
+        <li>
+          <a href="tel:18137893400" class="btn btn-primary mobile-cta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+            </svg>
+            Call 813-789-3400
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-bg">
+        <img src="assets/images/hero_001.jpg" alt="Professional electrician at work in Tampa home" class="hero-img" loading="eager">
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="hero-content">
+        <div class="container">
+          <span class="hero-eyebrow" data-animate-hero>Tampa's Trusted Electrician — 20+ Years</span>
+          <h1 class="hero-headline" data-animate-hero>
+            Powering South Tampa<br>
+            <em>Homes &amp; Families</em>
+          </h1>
+          <p class="hero-body" data-animate-hero>
+            Family-owned, licensed, bonded &amp; insured. Free quotes, zero trip charges, 
+            and a full-year parts &amp; labor warranty. We show up when we say we will.
+          </p>
+          <div class="hero-actions" data-animate-hero>
+            <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Quote</a>
+            <a href="services.html" class="btn btn-outline-light btn-lg">View Services</a>
+          </div>
+          <div class="hero-trust" data-animate-hero>
+            <div class="trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Free Estimates</span>
+            </div>
+            <div class="trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>No Hidden Fees</span>
+            </div>
+            <div class="trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>1-Year Warranty</span>
+            </div>
+            <div class="trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>A+ BBB Rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar" aria-label="Company achievements">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item" data-animate>
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Years Serving Tampa</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item" data-animate>
+            <span class="stat-number">8×</span>
+            <span class="stat-label">Angie's List Super Service Award</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item" data-animate>
+            <span class="stat-number">A+</span>
+            <span class="stat-label">Better Business Bureau</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item" data-animate>
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Satisfaction Guaranteed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Welcome / Intro Section -->
+    <section class="section welcome-section" aria-labelledby="welcome-heading">
+      <div class="container">
+        <div class="welcome-grid">
+          <div class="welcome-text">
+            <span class="section-label" data-animate>About Us</span>
+            <h2 id="welcome-heading" class="section-heading" data-animate>Your Neighborhood<br>Electricians</h2>
+            <p class="body-text" data-animate>
+              Unlike our competitors, we are a small family owned and operated company. For more than 20 years we have helped our Tampa neighbors with their home electrical needs. Odds are we have worked for someone you know!
+            </p>
+            <p class="body-text" data-animate>
+              We founded our business on three main principles — <strong>quality, pricing, and service</strong> — and we pride ourselves on our commitment to these principles each day.
+            </p>
+            <div class="welcome-features" data-animate>
+              <div class="feature-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                Licensed Master Electrician
+              </div>
+              <div class="feature-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Bonded &amp; Insured
+              </div>
+              <div class="feature-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Avg. 15 Yrs Electrician Experience
+              </div>
+            </div>
+            <a href="about.html" class="btn btn-primary" data-animate>Meet Chris Groves</a>
+          </div>
+          <div class="welcome-image" data-animate>
+            <img src="assets/images/image_002.jpg" alt="Chris Groves, Owner of Groves Electric" class="img-rounded">
+            <div class="welcome-badge" aria-hidden="true">
+              <span class="badge-number">20+</span>
+              <span class="badge-text">Years in Tampa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services-section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">What We Do</span>
+          <h2 id="services-heading" class="section-heading">Services We Offer</h2>
+          <p class="section-subtext">From simple repairs to full panel upgrades — we handle it all with expertise and care.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card" data-animate style="animation-delay:0ms">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">EV Chargers</h3>
+            <p class="service-desc">Professional installation of Level 2 home EV charging stations for all electric vehicle makes and models.</p>
+            <a href="services.html#ev-chargers" class="service-link" aria-label="Learn more about EV charger installation">Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card" data-animate style="animation-delay:60ms">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Home Surge Protection</h3>
+            <p class="service-desc">Whole-home surge protection to safeguard your appliances, electronics, and electrical system from damaging surges.</p>
+            <a href="services.html#surge-protection" class="service-link" aria-label="Learn more about home surge protection">Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card" data-animate style="animation-delay:120ms">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Panel Updates</h3>
+            <p class="service-desc">Service panel upgrades to meet modern electrical demands safely and bring your home up to current code.</p>
+            <a href="services.html#panel-updates" class="service-link" aria-label="Learn more about panel updates">Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card" data-animate style="animation-delay:180ms">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Lighting &amp; Receptacles</h3>
+            <p class="service-desc">Installation, replacement, and upgrade of lighting fixtures, ceiling fans, outlets, and switches throughout your home.</p>
+            <a href="services.html#lighting" class="service-link" aria-label="Learn more about lighting installation">Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card" data-animate style="animation-delay:240ms">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Video Doorbells</h3>
+            <p class="service-desc">Professional installation of video doorbells, security cameras, and connected floodlights from all major brands.</p>
+            <a href="services.html#video-doorbells" class="service-link" aria-label="Learn more about video doorbell installation">Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card" data-animate style="animation-delay:300ms">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Smoke &amp; CO2 Detectors</h3>
+            <p class="service-desc">Installation and replacement of smoke and carbon monoxide detectors to keep your family safe.</p>
+            <a href="services.html#smoke-detectors" class="service-link" aria-label="Learn more about smoke detector installation">Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+        </div>
+
+        <div class="services-cta" data-animate>
+          <p>Need something not listed? We likely do it.</p>
+          <a href="services.html" class="btn btn-primary">View All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section why-section" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-image" data-animate>
+            <img src="assets/images/hero_002.jpg" alt="Groves Electric crew working on a Tampa home electrical panel" class="img-rounded img-full">
+          </div>
+          <div class="why-content">
+            <span class="section-label" data-animate>Why Choose Us</span>
+            <h2 id="why-heading" class="section-heading" data-animate>The Groves Electric Difference</h2>
+            <div class="why-list">
+              <div class="why-item" data-animate style="animation-delay:0ms">
+                <div class="why-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <div class="why-text">
+                  <h3>Free Quotes — Always</h3>
+                  <p>No trip charges, no consultation fees, no hidden costs. Ever.</p>
+                </div>
+              </div>
+              <div class="why-item" data-animate style="animation-delay:60ms">
+                <div class="why-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <div class="why-text">
+                  <h3>1-Year Parts &amp; Labor Warranty</h3>
+                  <p>We stand behind our work. Full warranty on all parts and labor for 12 months.</p>
+                </div>
+              </div>
+              <div class="why-item" data-animate style="animation-delay:120ms">
+                <div class="why-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <div class="why-text">
+                  <h3>We Show Up On Time</h3>
+                  <p>Punctuality and respect for your schedule is non-negotiable. We'll be there when we say we will.</p>
+                </div>
+              </div>
+              <div class="why-item" data-animate style="animation-delay:180ms">
+                <div class="why-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <div class="why-text">
+                  <h3>Owner Personally Involved</h3>
+                  <p>When you call Groves Electric, you reach Chris directly on his cell. He oversees every project.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Preview -->
+    <section class="section testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">What Customers Say</span>
+          <h2 id="testimonials-heading" class="section-heading">Hundreds of Happy Tampa Homeowners</h2>
+        </div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card" data-animate style="animation-delay:0ms">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p>"I am very satisfied with the work completed and plan to use Groves Electric again. I highly recommend them as professional, courteous, and for providing quality work."</p>
+            <footer><cite>Customer in Tampa, FL</cite></footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card" data-animate style="animation-delay:80ms">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p>"Very prompt attention to our urgent problem at reasonable prices. Experience was pleasant, and I would gladly recommend them to anyone as well as use them again myself."</p>
+            <footer><cite>Customer in Tampa, FL</cite></footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card" data-animate style="animation-delay:160ms">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p>"They were even willing to work until 8:00 in the evening to accommodate my work schedule. The work was fast and very good. I would recommend Groves Electric to anyone."</p>
+            <footer><cite>Customer in Tampa, FL</cite></footer>
+          </blockquote>
+        </div>
+        <div class="section-cta" data-animate>
+          <a href="testimonials.html" class="btn btn-secondary">Read All Reviews</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="section area-section" aria-labelledby="area-heading">
+      <div class="container">
+        <div class="area-grid">
+          <div class="area-content" data-animate>
+            <span class="section-label">Service Area</span>
+            <h2 id="area-heading" class="section-heading">Serving South Tampa &amp; Surrounding Areas</h2>
+            <p class="body-text">We are your full-service South Tampa electrician, proudly serving homeowners and businesses across the region.</p>
+            <ul class="area-list" role="list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Hillsborough County
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Portions of Pinellas County
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Portions of Pasco County
+              </li>
+            </ul>
+          </div>
+          <div class="area-cta-box" data-animate>
+            <div class="cta-box-inner">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="cta-box-icon" aria-hidden="true">
+                <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+              </svg>
+              <h3>Ready to Get Started?</h3>
+              <p>Call Chris directly for a free quote. No trip charge. No hidden fees.</p>
+              <a href="tel:18137893400" class="btn btn-primary btn-lg">813-789-3400</a>
+              <a href="contact.html" class="btn btn-ghost">Or Send a Message</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo footer-logo" aria-label="Groves Electric, Inc. - Home">
+            <span class="logo-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="36" rx="8" fill="#4E9271"/>
+                <path d="M20 6L10 20H18L16 30L26 16H18L20 6Z" fill="#ffffff" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="logo-text">
+              <span class="logo-name">Groves Electric</span>
+              <span class="logo-tagline">Licensed Master Electrician</span>
+            </span>
+          </a>
+          <p class="footer-desc">Family-owned electrical contractor serving Tampa and surrounding areas for over 20 years. Licensed, bonded, and insured.</p>
+          <a href="https://www.facebook.com/groveselectricinc/" class="social-link" aria-label="Follow Groves Electric on Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </a>
+        </div>
+
+        <div class="footer-nav">
+          <h3 class="footer-heading">Navigation</h3>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <h3 class="footer-heading">Popular Services</h3>
+          <ul role="list">
+            <li><a href="services.html#ev-chargers">EV Chargers</a></li>
+            <li><a href="services.html#panel-updates">Panel Upgrades</a></li>
+            <li><a href="services.html#surge-protection">Surge Protection</a></li>
+            <li><a href="services.html#lighting">Lighting Installation</a></li>
+            <li><a href="services.html#video-doorbells">Video Doorbells</a></li>
+            <li><a href="services.html#rewiring">Home Rewiring</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3 class="footer-heading">Contact</h3>
+          <address>
+            <a href="tel:18137893400" class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+              813-789-3400
+            </a>
+            <a href="mailto:cgroves@groveselectricinc.com" class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              cgroves@groveselectricinc.com
+            </a>
+            <span class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Tampa, FL 33606
+            </span>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Groves Electric, Inc. All rights reserved. Licensed Electrical Contractor · Tampa, FL</p>
+        <p class="footer-awards">
+          <span>Angie's List Super Service Award — 8 Consecutive Years</span>
+          <span aria-hidden="true">·</span>
+          <span>A+ BBB Rating</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
